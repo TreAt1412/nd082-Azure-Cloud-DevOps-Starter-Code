@@ -1,0 +1,12 @@
+{    
+    "if": {
+        "allOf": [
+        { "field": "tags", "exists": "false" },
+        { "field": "type", "notIn": ["Microsoft.Authorization/roleAssignments"] }  
+        ]
+    },
+    "then": {
+        "effect": "deny"
+    }
+}  
+  
