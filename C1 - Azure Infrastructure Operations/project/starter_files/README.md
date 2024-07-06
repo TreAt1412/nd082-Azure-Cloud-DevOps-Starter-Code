@@ -42,12 +42,13 @@ Step 2: Create policy
 
 Step 3: Build Image with Packer
 1. Upload file server.json to Azure Bash Shell
-2. Run below command to create Image with Packer
+2. Replace credentials with the ones provided in Udacity lab 
+3. Run below command to create Image with Packer
    
     **packer build server.json**
    ![packer build success](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/905b9601-ff28-4849-b023-28adae0ed7da)
 
-3. Check whether image is created successfully
+4. Check whether image is created successfully
    
     **az image list**
    ![az image list](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/7ce85ef8-4508-4420-a291-ffad03f6a49a)
