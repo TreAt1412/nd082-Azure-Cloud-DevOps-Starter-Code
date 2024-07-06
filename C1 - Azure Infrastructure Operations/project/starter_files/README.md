@@ -24,17 +24,17 @@ Step 2: Create policy
 1. Upload file policy.json to Azure Bash shell to create policy
 2. Run below command to create policy definition
    
-    **az policy definition create --name tagging-policy --display-name "deny-creation-if-untagged-resources" --description "This policy will deny creation of any resource that has no tagged" --rules "policy.json" --mode All**
+    ```az policy definition create --name tagging-policy --display-name "deny-creation-if-untagged-resources" --description "This policy will deny creation of any resource that has no tagged" --rules "policy.json" --mode All```
    ![create policy](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/99f0d3e8-081e-47ca-8af6-44341e0373f5)
 
 4. Run below command to assign policy
    
-    **az policy assignment create --policy tagging-policy  --name tagging-policy --display-name "deny-creation-if-untagged-resources"**
+    ```az policy assignment create --policy tagging-policy  --name tagging-policy --display-name "deny-creation-if-untagged-resources"```
    ![assign policy](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/60dc6fa9-181e-43cf-9ba1-587fdf81528c)
 
 6. Check whether policy is assign with below command and view result
    
-    **az policy assignment list**
+    ```az policy assignment list```
    ![result policy 1](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/90d44d3b-84b1-4826-944c-c98119d35c9f)
    ![result policy 2](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/321a69f6-a2a2-4099-acc2-0e73337c52ee)
    ![result policy 3](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/b443103d-0b1d-4e87-82f5-e02d78adcc99)
@@ -45,12 +45,12 @@ Step 3: Build Image with Packer
 2. Replace credentials with the ones provided in Udacity lab 
 3. Run below command to create Image with Packer
    
-    **packer build server.json**
+    ```packer build server.json```
    ![packer build success](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/905b9601-ff28-4849-b023-28adae0ed7da)
 
 4. Check whether image is created successfully
    
-    **az image list**
+   ```az image list```
    ![az image list](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/7ce85ef8-4508-4420-a291-ffad03f6a49a)
  
    
@@ -58,12 +58,12 @@ Step 4: Create Infrastructure with Terraform
 1. Upload file main.tf and variable.tf to Azure Bash Shell
 2. Run below command to check terraform plan
    
-    **terraform plan**
+    ```terraform plan```
    ![terraform plan](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/cbff7592-c3df-4922-b21e-7b75d77a5c39)
 
 3. Run below command to create resources with terraform
    
-    **terraform apply**
+    ``` terraform apply```
    ![terraform apply](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/c82522b2-d857-47d5-8e23-704e681a105f)
 
 4. View result
@@ -71,7 +71,7 @@ Step 4: Create Infrastructure with Terraform
 
 5. Delete all resource after create
    
-    **terraform destroy**
+    ```terraform destroy```
     ![terraform destroy](https://github.com/TreAt1412/nd082-Azure-Cloud-DevOps-Starter-Code/assets/37327111/3cbcc63e-5fd6-4cab-bb0f-abd92c46ddce)
  
 
