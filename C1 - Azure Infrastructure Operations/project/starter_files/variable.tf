@@ -32,5 +32,5 @@ variable "admin_password" {
 
 variable "packer_image" {
    
-  default = "/subscriptions/481b1dfa-09f6-4305-a978-b656e03d8e84/resourceGroups/Azuredevops/providers/Microsoft.Compute/images/udacityProject1Image1"
+  default = "/subscriptions/0ee6d06f-69ab-4b3b-9f35-003e1b6eb227/resourceGroups/Azuredevops/providers/Microsoft.Compute/images/udacityProject1Image"
 }

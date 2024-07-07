@@ -1,8 +1,8 @@
 {
 	"variables": {
-		"client_id": "{{user `subscription_id`}}",
-		"client_secret": "{{user `client_secret`}}",
-		"subscription_id": "{{user `subscription_id`}}"
+		"client_id": "5f10bafc-9647-4831-a70e-2aaa146c9371",
+		"client_secret": "Tmy8Q~DVg02g7iT9oFFJm__gH9hmpmkMFY9A.b77",
+		"subscription_id": "0ee6d06f-69ab-4b3b-9f35-003e1b6eb227"
 	},
 	"builders": [{
 		"type": "azure-arm",
@@ -14,8 +14,8 @@
 		"image_offer": "UbuntuServer",
 		"image_sku": "18.04-LTS",
 		"managed_image_resource_group_name": "Azuredevops",
-		"managed_image_name":"udacityProject1Image1",
-		"location": "southcentralus",
+		"managed_image_name":"udacityProject1Image",
+		"location": "westeurope",
 		"vm_size": "Standard_D2s_v3"
 	}],
 	"provisioners": [{
